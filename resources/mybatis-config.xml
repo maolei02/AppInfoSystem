@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration   
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"   
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 配置懒加载 -->
+	<settings>
+		<setting name="lazyLoadingEnabled" value="false"/>
+	</settings>
+	
+	
+	<!-- 取别名 -->
+	<typeAliases>
+		<package name="cn.appsys.pojo"/><!-- 实体类所在包 -->
+	</typeAliases>
+	
+	
+	
+</configuration>
