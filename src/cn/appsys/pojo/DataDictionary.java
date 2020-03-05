@@ -2,13 +2,12 @@ package cn.appsys.pojo;
 
 import java.util.Date;
 
-public class DevUser {
+public class DataDictionary {
 	private Integer id;//主键id
-	private String devCode;//开发者帐号(系统登录账号)
-	private String devName;//开发者名称
-	private String devPassword;//开发者密码
-	private String devEmail;//开发者邮箱
-	private String devInfo;	//开发者简介
+	private String typeCode;//类型编码
+	private String typeName;//类型名称
+	private Integer valueId;//类型值ID
+	private String valueName;//类型值name
 	private Integer createdBy;//创建者
 	private Date creationDate;//创建时间
 	private Integer modifyBy;//更新者
@@ -20,35 +19,29 @@ public class DevUser {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	public String getDevCode() {
-		return devCode;
+	public String getTypeCode() {
+		return typeCode;
 	}
-	public void setDevCode(String devCode) {
-		this.devCode = devCode;
+	public void setTypeCode(String typeCode) {
+		this.typeCode = typeCode;
 	}
-	public String getDevName() {
-		return devName;
+	public String getTypeName() {
+		return typeName;
 	}
-	public void setDevName(String devName) {
-		this.devName = devName;
+	public void setTypeName(String typeName) {
+		this.typeName = typeName;
 	}
-	public String getDevPassword() {
-		return devPassword;
+	public Integer getValueId() {
+		return valueId;
 	}
-	public void setDevPassword(String devPassword) {
-		this.devPassword = devPassword;
+	public void setValueId(Integer valueId) {
+		this.valueId = valueId;
 	}
-	public String getDevEmail() {
-		return devEmail;
+	public String getValueName() {
+		return valueName;
 	}
-	public void setDevEmail(String devEmail) {
-		this.devEmail = devEmail;
-	}
-	public String getDevInfo() {
-		return devInfo;
-	}
-	public void setDevInfo(String devInfo) {
-		this.devInfo = devInfo;
+	public void setValueName(String valueName) {
+		this.valueName = valueName;
 	}
 	public Integer getCreatedBy() {
 		return createdBy;

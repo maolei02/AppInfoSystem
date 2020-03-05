@@ -2,13 +2,11 @@ package cn.appsys.pojo;
 
 import java.util.Date;
 
-public class DevUser {
+public class AppCategory {
 	private Integer id;//主键id
-	private String devCode;//开发者帐号(系统登录账号)
-	private String devName;//开发者名称
-	private String devPassword;//开发者密码
-	private String devEmail;//开发者邮箱
-	private String devInfo;	//开发者简介
+	private String categoryCode;//分类编码
+	private String categoryName;//分类名称
+	private Integer parentId;//父级节点id
 	private Integer createdBy;//创建者
 	private Date creationDate;//创建时间
 	private Integer modifyBy;//更新者
@@ -20,35 +18,23 @@ public class DevUser {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	public String getDevCode() {
-		return devCode;
+	public String getCategoryCode() {
+		return categoryCode;
 	}
-	public void setDevCode(String devCode) {
-		this.devCode = devCode;
+	public void setCategoryCode(String categoryCode) {
+		this.categoryCode = categoryCode;
 	}
-	public String getDevName() {
-		return devName;
+	public String getCategoryName() {
+		return categoryName;
 	}
-	public void setDevName(String devName) {
-		this.devName = devName;
+	public void setCategoryName(String categoryName) {
+		this.categoryName = categoryName;
 	}
-	public String getDevPassword() {
-		return devPassword;
+	public Integer getParentId() {
+		return parentId;
 	}
-	public void setDevPassword(String devPassword) {
-		this.devPassword = devPassword;
-	}
-	public String getDevEmail() {
-		return devEmail;
-	}
-	public void setDevEmail(String devEmail) {
-		this.devEmail = devEmail;
-	}
-	public String getDevInfo() {
-		return devInfo;
-	}
-	public void setDevInfo(String devInfo) {
-		this.devInfo = devInfo;
+	public void setParentId(Integer parentId) {
+		this.parentId = parentId;
 	}
 	public Integer getCreatedBy() {
 		return createdBy;
